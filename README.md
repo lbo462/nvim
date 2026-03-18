@@ -1,3 +1,18 @@
 # LBO's nvim config
 
 Because he's a nerd
+
+## Requirements
+
+- [nvim](https://github.com/neovim/neovim) >= 0.11.0
+
+### LSP
+
+- [ty](https://github.com/astral-sh/ty)
+- [ruff](https://github.com/astral-sh/ruff)
+- [lua_ls](https://github.com/luals/lua-language-server)
+
+### Others
+
+- [rg](https://github.com/BurntSushi/ripgrep) and [fd](https://github.com/sharkdp/fd) for [telescope](https://github.com/nvim-telescope/telescope.nvim)
+
