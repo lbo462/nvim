@@ -1,9 +1,16 @@
+-- VIM options
+--
 vim.opt.number = true
+vim.opt.relativenumber = true
 vim.opt.clipboard = 'unnamedplus'
-vim.opt.tabstop = 2
 vim.opt.termguicolors = true
+vim.opt.scrolloff = 10
 
-vim.keymap.set('n', 'H', '<cmd>bp<CR>', { desc = 'Switch to left the buffer' })
-vim.keymap.set('n', 'L', '<cmd>bn<CR>', { desc = 'Switch to right the buffer' })
+-- Keymaps
+--
+--- Change current buffer
+vim.keymap.set('n', 'H', '<cmd>bp<CR>', { desc = 'Switch to the buffer on the left' })
+vim.keymap.set('n', 'L', '<cmd>bn<CR>', { desc = 'Switch to the right on the right' })
 
+-- Load lazynvim
 require("config.lazy")
