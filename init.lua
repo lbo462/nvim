@@ -16,7 +16,12 @@ vim.keymap.set('n', '<C-h>', '<cmd>wincmd h<CR>')
 vim.keymap.set('n', '<C-l>', '<cmd>wincmd l<CR>')
 vim.keymap.set('n', '<C-j>', '<cmd>wincmd j<CR>')
 vim.keymap.set('n', '<C-k>', '<cmd>wincmd k<CR>')
--- Format file using LSP
-vim.keymap.set('n', '<leader>f', '<cmd>lua vim.lsp.buf.format()<CR>')
+--
+-- LSP format
+vim.keymap.set('n', '<leader>lf', '<cmd>lua vim.lsp.buf.format()<CR>')
+--
+-- LSP display diagnostics
+vim.keymap.set('n', '<leader>ld', '<cmd>lua vim.diagnostic.setloclist()<CR>')
+--
 -- Ruff check
 vim.keymap.set('n', '<leader>r', '<cmd>!ruff format . --check && ruff check --no-fix .<CR>')
