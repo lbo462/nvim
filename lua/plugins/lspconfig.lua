@@ -19,9 +19,16 @@ return {
         -- Display errors as virtual
         -- inline text
         vim.diagnostic.config({
-          virtual_text = {
-              source = true,
-          },
-      })
+            virtual_text = {
+                source = true,
+            },
+        })
+
+        -- Keymaps
+        --
+        -- Format
+        vim.keymap.set('n', '<leader>lf', '<cmd>lua vim.lsp.buf.format()<CR>')
+        -- Show diagnostics
+        vim.keymap.set('n', '<leader>ld', '<cmd>lua vim.diagnostic.setloclist()<CR>')
     end
 }
