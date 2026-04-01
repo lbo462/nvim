@@ -8,9 +8,15 @@ Because he's a nerd
 
 ### LSP
 
+__Python__
 - [ty](https://github.com/astral-sh/ty)
 - [ruff](https://github.com/astral-sh/ruff)
+
+__Lua__
 - [lua_ls](https://github.com/luals/lua-language-server)
+
+__Typescript__
+- [ts_ls](https://github.com/typescript-language-server/typescript-language-server)
 
 ### Others
 
