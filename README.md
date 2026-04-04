@@ -18,6 +18,9 @@ __Lua__
 __Typescript__
 - [ts_ls](https://github.com/typescript-language-server/typescript-language-server)
 
+__Rust__
+- [rust_analyzer](https://github.com/rust-lang/rust-analyzer)
+
 ### Others
 
 - [rg](https://github.com/BurntSushi/ripgrep) and [fd](https://github.com/sharkdp/fd) for [telescope](https://github.com/nvim-telescope/telescope.nvim)

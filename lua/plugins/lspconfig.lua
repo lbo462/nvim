@@ -15,6 +15,7 @@ return {
         vim.lsp.enable('lua_ls')
         vim.lsp.enable('ty')
         vim.lsp.enable('ruff')
+        vim.lsp.enable('rust_analyzer')
 
         -- Display errors as virtual
         -- inline text
