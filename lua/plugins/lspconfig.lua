@@ -25,11 +25,7 @@ return {
             },
         })
 
-        -- Keymaps
-        --
-        -- Format
-        vim.keymap.set('n', '<leader>lf', '<cmd>lua vim.lsp.buf.format()<CR>')
-        -- Show diagnostics
-        vim.keymap.set('n', '<leader>ld', '<cmd>lua vim.diagnostic.setloclist()<CR>')
+        vim.keymap.set('n', '<leader>lf', '<cmd>lua vim.lsp.buf.format()<CR>', { desc = 'LSP format' })
+        vim.keymap.set('n', '<leader>ld', '<cmd>lua vim.diagnostic.setloclist()<CR>', { desc = 'LSP show diagnostics' })
     end
 }
