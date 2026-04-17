@@ -13,19 +13,33 @@ return {
     },
     config = function()
         vim.lsp.enable('lua_ls')
+        vim.lsp.enable('ts_ls')
+        vim.lsp.enable('rust_analyzer')
         vim.lsp.enable('ty')
         vim.lsp.enable('ruff')
-        vim.lsp.enable('rust_analyzer')
+
+        vim.lsp.config('basedpyright', {
+            settings = {
+                basedpyright = {
+                    typeCheckingMode = 'recommended'
+                }
+            }
+        })
+        vim.lsp.enable('basedpyright')
 
         -- Display errors as virtual
         -- inline text
         vim.diagnostic.config({
             virtual_text = {
                 source = true,
+                severity = {
+                    min = vim.diagnostic.severity.ERROR
+                }
             },
         })
 
         vim.keymap.set('n', '<leader>lf', '<cmd>lua vim.lsp.buf.format()<CR>', { desc = 'LSP format' })
+        vim.keymap.set('n', '<leader>lr', '<cmd>lua vim.lsp.buf.rename()<CR>', { desc = 'LSP rename' })
         vim.keymap.set('n', '<leader>ld', '<cmd>lua vim.diagnostic.setloclist()<CR>', { desc = 'LSP show diagnostics' })
     end
 }
